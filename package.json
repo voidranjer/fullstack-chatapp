@@ -1,0 +1,26 @@
+{
+  "name": "chat-app",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@chakra-ui/icons": "^1.1.5",
+    "@chakra-ui/react": "^1.8.3",
+    "@emotion/react": "^11",
+    "@emotion/styled": "^11",
+    "firebase": "^9.6.7",
+    "framer-motion": "^5",
+    "next": "12.0.10",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-firebase-hooks": "^5.0.3"
+  },
+  "devDependencies": {
+    "eslint": "8.8.0",
+    "eslint-config-next": "12.0.10"
+  }
+}

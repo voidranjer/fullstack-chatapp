@@ -5,6 +5,11 @@ import { getFirestore } from "firebase/firestore";
 // import { initializeAppCheck, ReCaptchaV3Provider } from "firebase/app-check";
 
 console.log(process.env.API_KEY);
+console.log(process.env.AUTH_DOMAIN);
+console.log(process.env.PROJECT_ID);
+console.log(process.env.STORAGE_BUCKET);
+console.log(process.env.MESSAGING_SENDER_ID);
+console.log(process.env.APP_ID);
 
 // Your web app's Firebase configuration
 const firebaseConfig = {

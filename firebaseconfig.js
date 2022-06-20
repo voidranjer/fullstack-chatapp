@@ -6,12 +6,12 @@ import { initializeAppCheck, ReCaptchaV3Provider } from "firebase/app-check";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: process.ENV.API_KEY,
-  authDomain: process.ENV.AUTH_DOMAIN,
-  projectId: process.ENV.PROJECT_ID,
-  storageBucket: process.ENV.STORAGE_BUCKET,
-  messagingSenderId: process.ENV.MESSAGING_SENDER_ID,
-  appId: process.ENV.APP_ID,
+  apiKey: process.env.API_KEY,
+  authDomain: process.env.AUTH_DOMAIN,
+  projectId: process.env.PROJECT_ID,
+  storageBucket: process.env.STORAGE_BUCKET,
+  messagingSenderId: process.env.MESSAGING_SENDER_ID,
+  appId: process.env.APP_ID,
 };
 
 // Initialize Firebase
@@ -19,7 +19,7 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth();
 const db = getFirestore();
 const appCheck = initializeAppCheck(app, {
-  provider: new ReCaptchaV3Provider(process.ENV.RECAPTCHA),
+  provider: new ReCaptchaV3Provider(process.env.RECAPTCHA),
   isTokenAutoRefreshEnabled: true,
 });
 

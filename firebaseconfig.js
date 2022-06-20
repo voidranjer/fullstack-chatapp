@@ -4,6 +4,8 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 // import { initializeAppCheck, ReCaptchaV3Provider } from "firebase/app-check";
 
+console.log(process.env.API_KEY);
+
 // Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: process.env.API_KEY,
